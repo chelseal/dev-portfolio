@@ -1,36 +1,60 @@
+/* Fonts */
+
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+HK:300&display=swap&subset=chinese-hongkong');
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 
-    @keyframes neon-flicker {
+/* Keyframes  */
 
+@keyframes neon-flicker {
+
+        35% {
+            color:#333;
+          }
+
+        40%{
+            color: rgba(184, 248, 255, 0.94);
+          }
+
+        45% {
+            color: #333;
+            text-shadow: inherit;
+          }
+            
         78% {
             color: rgba(184, 248, 255, 0.94);
             text-shadow: inherit;
           }
-          79%{
-             color: #333;
+
+        79%{
+            color: #333;
           }
-          80% {
-            
+
+        80% {
             text-shadow: none;
           }
-          81% {
+
+
+        81% {
             color: rgba(184, 248, 255, 0.94);
             text-shadow: inherit;
           }
-          82% {
+
+        82% {
             color: #333;
             text-shadow: none;
           }
-          83% {
+
+        83% {
             color: rgba(184, 248, 255, 0.94);
             text-shadow: inherit;
           }
-          92% {
+
+        92% {
             color: #333;
             text-shadow: none;
           }
-          92.5% {
+
+        92.5% {
             color: rgba(184, 248, 255, 0.94);
             text-shadow: inherit;
           }
@@ -55,8 +79,7 @@ body {
     letter-spacing: 2px;
     color: rgba(184, 248, 255, 0.94);
     text-shadow: 0 0 10px #0BDBF1;
-    /* animation: neon-flicker 1.5s linear 0s infinite alternate none; */
-    animation: neon-flicker linear infinite 3s;
+    animation: neon-flicker linear infinite 2s;
 }
 
 .neon:after {
@@ -81,16 +104,11 @@ body {
     z-index: -2;
     opacity: 1;
     filter: blur(40px);
-    /* animation: colorful-text 3s linear 0s infinite alternate none; */
 }
 
 
-/* .gradient {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-} */
+
+
 /* 
 .h1 {
     background-color: yellow;
