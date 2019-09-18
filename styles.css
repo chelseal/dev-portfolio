@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+HK:300&display=swap&subset=chinese-hongkong');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(./images/bg.jpeg);
+    background-size: cover;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.neon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0 20px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: rgba(184, 248, 255, 0.94);
+    text-shadow: 0 0 10px #0BDBF1;
+}
+
+.neon:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 20px;
+    z-index: -1;
+    color: #0BDBF1;
+    filter: blue(15px);
+}
+
+.neon:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0681E9;
+    z-index: -2;
+    opacity: 1;
+    filter: blur(40px);
+    animation: colorful-text 3s linear 0s infinite alternate none;
+}
+
+
+
+@keyframes neon-text {
+    0%   { color: red; }
+    /* 25%  { color: pink; } */
+    50%  { color: bisque; }
+    /* 75%  { color: yellow; } */
+    100% { color: orange; }
+}
+
+/* .gradient {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} */
+/* 
+.h1 {
+    background-color: yellow;
+    animation: enter-screen; */
+    /* font-size: 40px;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    /* top: 40%; */
+    /* animation-name: colorful-text;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: none; */
+}
