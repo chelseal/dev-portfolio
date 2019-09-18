@@ -1,6 +1,41 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+HK:300&display=swap&subset=chinese-hongkong');
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 
+    @keyframes neon-flicker {
+
+        78% {
+            color: rgba(184, 248, 255, 0.94);
+            text-shadow: inherit;
+          }
+          79%{
+             color: #333;
+          }
+          80% {
+            
+            text-shadow: none;
+          }
+          81% {
+            color: rgba(184, 248, 255, 0.94);
+            text-shadow: inherit;
+          }
+          82% {
+            color: #333;
+            text-shadow: none;
+          }
+          83% {
+            color: rgba(184, 248, 255, 0.94);
+            text-shadow: inherit;
+          }
+          92% {
+            color: #333;
+            text-shadow: none;
+          }
+          92.5% {
+            color: rgba(184, 248, 255, 0.94);
+            text-shadow: inherit;
+          }
+    }
+
 body {
     margin: 0;
     padding: 0;
@@ -20,6 +55,8 @@ body {
     letter-spacing: 2px;
     color: rgba(184, 248, 255, 0.94);
     text-shadow: 0 0 10px #0BDBF1;
+    /* animation: neon-flicker 1.5s linear 0s infinite alternate none; */
+    animation: neon-flicker linear infinite 3s;
 }
 
 .neon:after {
@@ -44,18 +81,9 @@ body {
     z-index: -2;
     opacity: 1;
     filter: blur(40px);
-    animation: colorful-text 3s linear 0s infinite alternate none;
+    /* animation: colorful-text 3s linear 0s infinite alternate none; */
 }
 
-
-
-@keyframes neon-text {
-    0%   { color: red; }
-    /* 25%  { color: pink; } */
-    50%  { color: bisque; }
-    /* 75%  { color: yellow; } */
-    100% { color: orange; }
-}
 
 /* .gradient {
     display: flex;
@@ -79,4 +107,4 @@ body {
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-fill-mode: none; */
-}
+/* } */
