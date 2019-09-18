@@ -5,10 +5,13 @@
 
 /* Keyframes  */
 
-@keyframes neon-flicker {
+/* Index Page */
+
+@keyframes neon-flicker-welcome {
 
         35% {
             color:#333;
+            opacity: 0.5;
           }
 
         40%{
@@ -68,7 +71,7 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
-.neon {
+.neon-welcome {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -79,10 +82,10 @@ body {
     letter-spacing: 2px;
     color: rgba(184, 248, 255, 0.94);
     text-shadow: 0 0 10px #0BDBF1;
-    animation: neon-flicker linear infinite 2s;
+    animation: neon-flicker-welcome linear infinite 2s;
 }
 
-.neon:after {
+.neon-welcome:after {
     content: attr(data-text);
     position: absolute;
     top: 0;
@@ -93,7 +96,7 @@ body {
     filter: blue(15px);
 }
 
-.neon:before {
+.neon-welcome:before {
     content: '';
     position: absolute;
     top: 0;
@@ -105,6 +108,128 @@ body {
     opacity: 1;
     filter: blur(40px);
 }
+
+/* About Page */
+
+
+@keyframes neon-flicker-about {
+
+    35% {
+        color:#333;
+      }
+
+    40%{
+        color: rgba(184, 248, 255, 0.94);
+      }
+
+    45% {
+        color: #333;
+        text-shadow: inherit;
+      }
+        
+    78% {
+        color: rgba(184, 248, 255, 0.94);
+        text-shadow: inherit;
+      }
+
+    79%{
+        color: #333;
+      }
+
+    80% {
+        text-shadow: none;
+      }
+
+
+    81% {
+        color: rgba(184, 248, 255, 0.94);
+        text-shadow: inherit;
+      }
+
+    82% {
+        color: #333;
+        text-shadow: none;
+      }
+
+    83% {
+        color: rgba(184, 248, 255, 0.94);
+        text-shadow: inherit;
+      }
+
+    92% {
+        color: #333;
+        text-shadow: none;
+      }
+
+    92.5% {
+        color: rgba(184, 248, 255, 0.94);
+        text-shadow: inherit;
+      }
+}
+
+.neon-about {
+    position: relative;
+    top: 20%;
+    right: 10%;
+    width: 10%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0 20px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: rgba(184, 248, 255, 0.94);
+    text-shadow: 0 0 20px #0BDBF1;
+    animation: neon-flicker-about linear infinite 2s;
+}
+
+.neon-about:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 20px;
+    z-index: -1;
+    color: #0BDBF1;
+    filter: blue(15px);
+}
+
+.neon-about:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0681E9;
+    z-index: -2;
+    opacity: 1;
+    filter: blur(40px);
+}
+
+#about p {
+    
+    font-size: 72px;
+}
+
+.about {
+    position: fixed;
+    top: 20%;
+    right: 10%;
+    width: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
