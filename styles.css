@@ -4,6 +4,46 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Sacramento&display=swap');
 
+/* ------------------------ Classes ------------------------- */
+
+.neon {
+        position: relative;
+        top: 20%;
+        right: 10%;
+        width: 10%;
+        transform: translate(-50%,-50%);
+        margin: 0;
+        padding: 0 20px;
+        font-size: 30px;
+        letter-spacing: 2px;
+        color: rgba(184, 248, 255, 0.94);
+        text-shadow: 0 0 20px #0BDBF1;
+    }
+
+.neon-resume:after {
+    content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0 20px;
+        z-index: -1;
+        color: #0BDBF1;
+        filter: blue(15px);
+    }
+    
+.neon-resume:before {
+    content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #0681E9;
+        z-index: -2;
+        opacity: 1;
+        filter: blur(40px);
+    }
+
 /* ------------------------ Start Navigation Bar ------------------------- */
 
 .nav {
@@ -273,45 +313,6 @@ body {
         text-shadow: inherit; }
     }
 
-.neon-about {
-    position: relative;
-    top: 20%;
-    right: 10%;
-    width: 10%;
-    transform: translate(-50%,-50%);
-    margin: 0;
-    padding: 0 20px;
-    font-size: 30px;
-    letter-spacing: 2px;
-    color: rgba(184, 248, 255, 0.94);
-    text-shadow: 0 0 20px #0BDBF1;
-    animation: neon-flicker-about linear infinite 2s;
-}
-
-.neon-about:after {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0 20px;
-    z-index: -1;
-    color: #0BDBF1;
-    filter: blue(15px);
-}
-
-.neon-about:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #0681E9;
-    z-index: -2;
-    opacity: 1;
-    filter: blur(40px);
-}
-
 #about p {
     margin-top: 22%;
     margin-left: 5%;
@@ -353,45 +354,6 @@ body {
         text-shadow: inherit; }
     }
 
-.neon-resume {
-    position: relative;
-    top: 20%;
-    right: 10%;
-    width: 10%;
-    transform: translate(-50%,-50%);
-    margin: 0;
-    padding: 0 20px;
-    font-size: 30px;
-    letter-spacing: 2px;
-    color: rgba(184, 248, 255, 0.94);
-    text-shadow: 0 0 20px #0BDBF1;
-    animation: neon-flicker-resume linear infinite 2s;
-}
-
-.neon-resume:after {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0 20px;
-    z-index: -1;
-    color: #0BDBF1;
-    filter: blue(15px);
-}
-
-.neon-resume:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #0681E9;
-    z-index: -2;
-    opacity: 1;
-    filter: blur(40px);
-}
-
 #resume p {
     margin-top: 22%;
     margin-left: 5%;
@@ -408,13 +370,12 @@ body {
     width: 10%;
 }
 
-/* ---------------------------- Start Resume Page ----------------------------- */
-
 @keyframes neon-flicker-view-resume {
 
     35% { color:#333; }
     40%{ color: rgba(184, 248, 255, 0.94); }
-    45% { color: #333; text-shadow: inherit; }      
+    45% { color: #333;
+        text-shadow: inherit; }      
     78% { color: rgba(184, 248, 255, 0.94);
         text-shadow: inherit; }
     79%{ color: #333; }
@@ -430,45 +391,6 @@ body {
     92.5% { color: rgba(184, 248, 255, 0.94);
         text-shadow: inherit; }
     }
-
-.neon-view-resume {
-    position: relative;
-    top: 20%;
-    right: 10%;
-    width: 10%;
-    transform: translate(-50%,-50%);
-    margin: 0;
-    padding: 0 20px;
-    font-size: 30px;
-    letter-spacing: 2px;
-    color: rgba(184, 248, 255, 0.94);
-    text-shadow: 0 0 20px #0BDBF1;
-    animation: neon-flicker-about linear infinite 2s;
-}
-
-.neon-view-resume:after {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0 20px;
-    z-index: -1;
-    color: #0BDBF1;
-    filter: blue(15px);
-}
-
-.neon-view-resume:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #0681E9;
-    z-index: -2;
-    opacity: 1;
-    filter: blur(40px);
-}
 
 .viewcv {
     position: fixed;
@@ -586,45 +508,6 @@ body {
         text-shadow: inherit; }
     }
 
-.neon-interests {
-    position: relative;
-    top: 20%;
-    right: 10%;
-    width: 10%;
-    transform: translate(-50%,-50%);
-    margin: 0;
-    padding: 0 20px;
-    font-size: 30px;
-    letter-spacing: 2px;
-    color: rgba(184, 248, 255, 0.94);
-    text-shadow: 0 0 20px #0BDBF1;
-    animation: neon-flicker-interests linear infinite 2s;
-}
-
-.neon-interests:after {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0 20px;
-    z-index: -1;
-    color: #0BDBF1;
-    filter: blue(15px);
-}
-
-.neon-interests:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #0681E9;
-    z-index: -2;
-    opacity: 1;
-    filter: blur(40px);
-}
-
 #interests p {
     margin-top: 22%;
     margin-left: 5%;
@@ -666,65 +549,25 @@ body {
         text-shadow: inherit; }
     }
 
-.neon-blog {
-    position: relative;
-    top: 20%;
-    right: 10%;
-    width: 10%;
-    transform: translate(-50%,-50%);
-    margin: 0;
-    padding: 0 20px;
-    font-size: 30px;
-    letter-spacing: 2px;
-    color: rgba(184, 248, 255, 0.94);
-    text-shadow: 0 0 20px #0BDBF1;
-    animation: neon-flicker-blog linear infinite 2s;
-}
-
-.neon-blog:after {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0 20px;
-    z-index: -1;
-    color: #0BDBF1;
-    filter: blue(15px);
-}
-
-.neon-blog:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #0681E9;
-    z-index: -2;
-    opacity: 1;
-    filter: blur(40px);
-}
-
 @keyframes neon-flicker-blog-border {
 
-    35% { border-color:#333; }
-    40%{ border-color: rgba(184, 248, 255, 0.94); }
-    45% { border-color: #333;
-        box-shadow: inherit; }      
-    78% { border-color: rgba(184, 248, 255, 0.94);
-        box-shadow: inherit; }
-    79%{ border-color: #333; }
-    80% { box-shadow: none; }
-    81% { border-color: rgba(184, 248, 255, 0.94);
-        box-shadow: inherit; }
-    82% { border-color: #333;
-        box-shadow: none; }
-    83% { border-color: rgba(184, 248, 255, 0.94);
-        box-shadow: inherit; }
-    92% { border-color: #333;
-        box-shadow: none; }
-    92.5% { border-color: rgba(184, 248, 255, 0.94);
-        box-shadow: inherit; }
+    35% { color:#333; }
+    40%{ color: rgba(184, 248, 255, 0.94); }
+    45% { color: #333; text-shadow: inherit; }      
+    78% { color: rgba(184, 248, 255, 0.94);
+        text-shadow: inherit; }
+    79%{ color: #333; }
+    80% { text-shadow: none; }
+    81% { color: rgba(184, 248, 255, 0.94);
+        text-shadow: inherit; }
+    82% { color: #333;
+        text-shadow: none; }
+    83% { color: rgba(184, 248, 255, 0.94);
+        text-shadow: inherit; }
+    92% { color: #333;
+        text-shadow: none; }
+    92.5% { color: rgba(184, 248, 255, 0.94);
+        text-shadow: inherit; }
     }
 
 .neon-flicker-blog-border {
@@ -811,7 +654,7 @@ body {
     border-width: 3px;
     margin-block-end: 70px;
     border-color: white;
-    animation: neon-flicker-blog-border linear infinite 5s;
+    /* animation: neon-flicker-blog-border linear infinite 5s; */
 }
 
 .blog-date {
