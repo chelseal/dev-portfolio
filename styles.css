@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+HK:300&display=swap&subset=chinese-hongkong');
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sacramento&display=swap');
 
 /* ------------------------ Start Navigation Bar ------------------------- */
 
@@ -15,8 +16,8 @@
   }
 
   .nav a {
-    font-size: 30px;
-    font-family: 'Quicksand', 'sans serif;'
+    font-size: 45px;
+    font-family: 'Sacramento', cursive;
   }
 
   a { text-decoration: none; color: white; }
@@ -28,21 +29,21 @@
 @keyframes neon-flicker-nav {
 
     35% { color:#333; }
-    40%{ color: rgba(184, 248, 255, 0.94); }
+    40%{ color: rgba(125, 251, 177, 0.906); }
     45% { color: #333; text-shadow: inherit; }      
-    78% { color: rgba(184, 248, 255, 0.94);
+    78% { color: rgba(125, 251, 177, 0.906);
         text-shadow: inherit; }
     79%{ color: #333; }
     80% { text-shadow: none; }
-    81% { color: rgba(184, 248, 255, 0.94);
+    81% { color: rgba(125, 251, 177, 0.906);
         text-shadow: inherit; }
     82% { color: #333;
         text-shadow: none; }
-    83% { color: rgba(184, 248, 255, 0.94);
+    83% { color: rgba(125, 251, 177, 0.906);
         text-shadow: inherit; }
     92% { color: #333;
         text-shadow: none; }
-    92.5% { color: rgba(184, 248, 255, 0.94);
+    92.5% { color: rgba(125, 251, 177, 0.906);
         text-shadow: inherit; }
 }
 
@@ -52,22 +53,22 @@
     width: 10%;
     margin: 0;
     padding: 0 20px;
-    color: rgba(184, 248, 255, 0.94);
-    text-shadow: 0 0 20px #0BDBF1;
-    animation: neon-flicker-nav linear infinite 2s;
+    color: rgba(125, 251, 177, 0.906);
+    text-shadow: 0 0 20px #277526;
+    animation: neon-flicker-nav linear infinite 9s;
 }
 
 @keyframes neon-flicker-nav-span {
 
-    40%{ color: rgba(184, 248, 255, 0.94); }
+    40%{ color: rgba(125, 251, 177, 0.906); }
     45% { color: #333;
         text-shadow: inherit; }
     80% { text-shadow: none; }
-    81% { color: rgba(184, 248, 255, 0.94);
+    81% { color: rgba(125, 251, 177, 0.906);
         text-shadow: inherit; }
     82% { color: #333;
         text-shadow: none; }
-    83% { color: rgba(184, 248, 255, 0.94);
+    83% { color: rgba(125, 251, 177, 0.906);
         text-shadow: inherit; }
     92% { color: #333;
         text-shadow: none; }
@@ -79,9 +80,9 @@
     width: 10%;
     margin: 0;
     /* padding: 0 20px; */
-    color: rgba(184, 248, 255, 0.94);
-    text-shadow: 0 0 20px #0BDBF1;
-    animation: neon-flicker-nav-span linear infinite 2s;
+    color: rgba(125, 251, 177, 0.906);
+    text-shadow: 0 0 20px #277526;
+    animation: neon-flicker-nav-span linear infinite 10s;
 }
     
 .neon-nav:after {
@@ -91,7 +92,7 @@
     left: 0;
     padding: 0 20px;
     z-index: -1;
-    color: #0BDBF1;
+    color: #43D666;
     filter: blue(15px);
 }
     
@@ -102,7 +103,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: #0681E9;
+    background: #277526;
     z-index: -2;
     opacity: 1;
     filter: blur(40px);
