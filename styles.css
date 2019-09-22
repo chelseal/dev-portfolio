@@ -538,6 +538,10 @@ body {
     visibility: hidden;
 }
 
+.photography {
+    visibility: hidden;
+}
+
 /* ########################### End Interests Page ########################### */
 
 /* ---------------------------- Start Blog Page ----------------------------- */
@@ -735,6 +739,14 @@ body {
         width: 8%;
     }
 
+.photography {
+        visibility: visible;
+        position: fixed;
+        top: 17%;
+        right: 10%;
+        width: 13.5%;
+      }
+
 .blog {
         visibility: visible;
         position: fixed;
@@ -788,8 +800,16 @@ body {
         visibility: visible;
         position: fixed;
         top: 20%;
-        right: 2%;
+        right: 10%;
         width: 8%;
+      }
+
+    .photography {
+        visibility: visible;
+        position: fixed;
+        top: 28%;
+        right: 10%;
+        width: 9%;
       }
 
     .blog {
@@ -820,7 +840,7 @@ body {
         width: 1200px;
         margin-left: 20px;
         margin-right: 20px;
-        margin-top: 20%;
+        margin-top: 25%;
     }
     
     @keyframes slide_animation {
@@ -861,7 +881,14 @@ body {
     }
      
 @media (min-width: 1024px){
-    
+    .slider-frame {
+        overflow: hidden;
+        height: 800px;
+        width: 1200px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20%;
+      }
     }
      
 @media (min-width: 1200px){
