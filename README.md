@@ -2,7 +2,7 @@
 # Chelsea Love, Coder Academy student
 
 Link to [GitHub](https://github.com/chelseal/stretch-terminal-app)
-Link to [Trello](https://trello.com/invite/b/77mUx7cO/7e2b53e2a85f6335203ce3d71da23bb0/t1a2-terminal-application-chelsea-love)
+Link to [Trello](https://trello.com/invite/b/DScoBemA/d75a9ac2f7dd58e6d34b757249ff4227/t1a3-portfolio)
 Link to [live website on Netlify](https://chelsea-dev-portfolio.netlify.com)
 
 # Statement of Purpose and Scope
