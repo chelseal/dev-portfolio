@@ -16,8 +16,8 @@
         padding: 0 20px;
         font-size: 30px;
         letter-spacing: 2px;
-        color: rgba(184, 248, 255, 0.94);
-        text-shadow: 0 0 20px #0BDBF1;
+        /* color: rgba(184, 248, 255, 0.94);
+        text-shadow: 0 0 20px #0BDBF1; */
     }
 
 .neon-resume:after {
@@ -315,6 +315,8 @@ body {
 
 .about {
     visibility: hidden;
+    color: rgba(255, 213, 245, 0.94);
+    text-shadow: 0 0 20px rgb(241, 11, 210);
 }
 
 /* ########################### End About Page ########################### */
@@ -375,6 +377,8 @@ body {
 
 .resume {
         visibility: hidden;
+        color: rgba(255, 254, 220, 0.993);
+        text-shadow: 0 0 20px rgb(241, 237, 11);
     }
 
 .viewcv {
@@ -382,6 +386,8 @@ body {
     top: 50%;
     bottom: 40%;
     right: 50%;
+    color: rgb(183, 255, 255);
+    text-shadow: 0 0 20px rgb(11, 241, 241);
 }
 
 /* ########################### End Resume Page ########################### */
@@ -536,10 +542,14 @@ body {
 
 .interests {
     visibility: hidden;
+    color: rgb(233, 196, 255);
+    text-shadow: 0 0 20px rgb(181, 52, 255);
 }
 
 .photography {
     visibility: hidden;
+    color: rgb(255, 191, 189);
+    text-shadow: 0 0 20px rgb(255, 58, 51);
 }
 
 /* ########################### End Interests Page ########################### */
@@ -692,6 +702,8 @@ body {
 
 .blog {
     visibility: hidden;
+    color: rgb(255, 215, 183);
+    text-shadow: 0 0 20px rgb(255, 143, 51);
 }
 
 /* ########################### End Blog Page ########################### */
@@ -800,7 +812,7 @@ body {
         visibility: visible;
         position: fixed;
         top: 20%;
-        right: 10%;
+        right: 2%;
         width: 8%;
       }
 
@@ -808,7 +820,7 @@ body {
         visibility: visible;
         position: fixed;
         top: 28%;
-        right: 10%;
+        right: 2%;
         width: 9%;
       }
 
