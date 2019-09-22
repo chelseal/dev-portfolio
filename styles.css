@@ -381,14 +381,14 @@ body {
         text-shadow: 0 0 20px rgb(241, 237, 11);
     }
 
-    @keyframes hue {
-        0% {
+@keyframes hue {
+    0% {
             filter: hue-rotate(0deg);
-        }
-        100% {
-            filter: hue-rotate(-360deg);
-        }
     }
+    100% {
+            filter: hue-rotate(-360deg);
+    }
+}
 
 .viewcv {
     position: fixed;
@@ -424,15 +424,6 @@ body {
     margin-top: 35%;
 }
 
-/* .slider-frame {
-    overflow: hidden;
-    height: 800px;
-    width: 1200px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 35%;
-} */
-
 @keyframes slide_animation {
     0% { left: 0; }
     10% { left: 0; }
@@ -459,18 +450,6 @@ body {
     animation-play-state: running;
 }
 
-/* .slide-images {
-    width: 3600px;
-    height: 800px;
-    margin: 0 0 0 -2400px;
-    position: relative;
-    animation-name: slide_animation;
-    animation-duration: 33s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-play-state: running;
-} */
-
 .img-container {
     height: 400px;
     width: 600px;
@@ -480,16 +459,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
-/* .img-container {
-    height: 800px;
-    width: 1200px;
-    position: relative;
-    float: left;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
 
 .img-container:nth-of-type(1) {
     background-image: url('images/Amsterdam.jpg');
@@ -754,7 +723,7 @@ body {
         margin-top: 40%;
         margin-left: 5%;
         margin-right: 5%;
-        font-size: 30px;
+        font-size: 20px;
         color: white;
         opacity: 0.7;
 }
@@ -770,8 +739,8 @@ body {
 .interests {
         visibility: visible;
         position: fixed;
-        top: 8%;
-        right: 15%;
+        top: 18%;
+        right: 2%;
         width: 8%;
     }
 
@@ -790,7 +759,6 @@ body {
     right: 15%;
     width: 6%;
     }
-}
      
 @media (min-width: 768px){
 .nav {
@@ -810,7 +778,7 @@ body {
     }
 
 #about p {
-    margin-top: 22%;
+    margin-top: 10%;
     margin-left: 5%;
     margin-right: 10%;
     font-size: 55px;
@@ -840,7 +808,7 @@ body {
 .interests {
     visibility: visible;
     position: fixed;
-    top: 20%;
+    top: 20%
     right: 2%;
     width: 8%;
     }
@@ -919,7 +887,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     }
-    }
+}
      
 @media (min-width: 1024px){
 
@@ -945,7 +913,7 @@ body {
 }
      
 @media (min-width: 1200px){
-    .blog-1 {
+.blog-1 {
     background: url(./images/blue.jpg) no-repeat center center;
     background-size: 100%;
     }
