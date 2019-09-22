@@ -381,13 +381,32 @@ body {
         text-shadow: 0 0 20px rgb(241, 237, 11);
     }
 
+    @keyframes hue {
+        0% {
+            filter: hue-rotate(0deg);
+        }
+        100% {
+            filter: hue-rotate(-360deg);
+        }
+    }
+
 .viewcv {
     position: fixed;
     top: 50%;
     bottom: 40%;
     right: 50%;
-    color: rgb(183, 255, 255);
-    text-shadow: 0 0 20px rgb(11, 241, 241);
+    color: #f326d8;
+    animation: hue 15s infinite linear;
+    }
+
+.github {
+    position: fixed;
+    top: 60%;
+    bottom: 30%;
+    right: 47%;
+    color: #f32686;
+    animation: hue 15s infinite linear;
+    }
 }
 
 /* ########################### End Resume Page ########################### */
@@ -708,15 +727,20 @@ body {
 
 /* ########################### End Blog Page ########################### */
 
-/* -------------------- Breakpoints based on content ---------------------- */
+/* -------------------- Media Breakpoints based on content ---------------------- */
 
 @media (min-width: 640px){
 
 .viewcv {
-        position: fixed;
-        top: 60%;
-        right: 47%;
+    top: 60%;
+    right: 47%;
     }
+
+.github {
+    top: 75%;
+    bottom: 20%;
+    right: 45%;
+}
 
 .about {
         visibility: visible;
@@ -724,7 +748,7 @@ body {
         top: 8%;
         right: 15%;
         width: 6%;
-    }
+}
 
 #about p {
         margin-top: 40%;
@@ -733,7 +757,7 @@ body {
         font-size: 30px;
         color: white;
         opacity: 0.7;
-    }
+}
 
 .resume {
         visibility: visible;
@@ -752,197 +776,215 @@ body {
     }
 
 .photography {
-        visibility: visible;
-        position: fixed;
-        top: 17%;
-        right: 10%;
-        width: 13.5%;
-      }
+    visibility: visible;
+    position: fixed;
+    top: 17%;
+    right: 10%;
+    width: 13.5%;
+    }
 
 .blog {
-        visibility: visible;
-        position: fixed;
-        top: 8%;
-        right: 15%;
-        width: 6%;
-      }
+    visibility: visible;
+    position: fixed;
+    top: 8%;
+    right: 15%;
+    width: 6%;
     }
+}
      
 @media (min-width: 768px){
-    .nav {
-        flex-direction: row;
-      }
-    
-    .nav a {
-        font-size: 40px;
-      }
-
-    .about {
-        visibility: visible;
-        position: fixed;
-        top: 20%;
-        right: 2%;
-        width: 6.5%;
-    }
-
-    #about p {
-        margin-top: 22%;
-        margin-left: 5%;
-        margin-right: 10%;
-        font-size: 55px;
-        color: white;
-        opacity: 0.7;
-    }
-
-    .viewcv {
-        position: fixed;
-        top: 55%;
-        right: 40%;
-      }
-
-    .resume {
-        visibility: visible;
-        position: fixed;
-        top: 20%;
-        right: 2%;
-        width: 7.5%;
-      }
-
-    .interests {
-        visibility: visible;
-        position: fixed;
-        top: 20%;
-        right: 2%;
-        width: 8%;
-      }
-
-    .photography {
-        visibility: visible;
-        position: fixed;
-        top: 28%;
-        right: 2%;
-        width: 9%;
-      }
-
-    .blog {
-        visibility: visible;
-        position: fixed;
-        top: 20%;
-        right: 2%;
-        width: 6%;
-      }
-
-    .blog-column {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 15%;
-        margin-left: 5%;
-        margin-right: 10%;
-        margin-bottom: 5%;
-        font-size: 20px;
-        color: white;
-        opacity: 0.7
-      }
-    
-    .slider-frame {
-        overflow: hidden;
-        height: 800px;
-        width: 1200px;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 25%;
+.nav {
+    flex-direction: row;
     }
     
-    @keyframes slide_animation {
-        0% { left: 0; }
-        10% { left: 0; }
-        20% { left: 1200px; }
-        30% { left: 1200px; }
-        40% { left: 2400px; }
-        50% { left: 2400px; }
-        60% { left: 1200px; }
-        70% { left: 1200px; }
-        80% { left: 0px; }
-        90% { left: 0px; }
-        100% { left: 0px; }
+.nav a {
+    font-size: 40px;
+    }
+
+.about {
+    visibility: visible;
+    position: fixed;
+    top: 20%;
+    right: 2%;
+    width: 6.5%;
+    }
+
+#about p {
+    margin-top: 22%;
+    margin-left: 5%;
+    margin-right: 10%;
+    font-size: 55px;
+    color: white;
+    opacity: 0.7;
+    }
+
+.viewcv {
+    top: 60%;
+    right: 47%;
+    }
+
+.github {
+    top: 75%;
+    bottom: 20%;
+    right: 45%;
+    }
+
+.resume {
+    visibility: visible;
+    position: fixed;
+    top: 20%;
+    right: 2%;
+    width: 7.5%;
+    }
+
+.interests {
+    visibility: visible;
+    position: fixed;
+    top: 20%;
+    right: 2%;
+    width: 8%;
+    }
+
+.photography {
+    visibility: visible;
+    position: fixed;
+    top: 28%;
+    right: 2%;
+    width: 9%;
+    }
+
+.blog {
+    visibility: visible;
+    position: fixed;
+    top: 20%;
+    right: 2%;
+    width: 6%;
+    }
+
+.blog-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+    margin-left: 5%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    font-size: 20px;
+    color: white;
+    opacity: 0.7
     }
     
-    .slide-images {
-        width: 3600px;
-        height: 800px;
-        margin: 0 0 0 -2400px;
-        position: relative;
-        animation-name: slide_animation;
-        animation-duration: 33s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        animation-play-state: running;
+.slider-frame {
+    overflow: hidden;
+    height: 800px;
+    width: 1200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 25%;
     }
     
-    .img-container {
-        height: 800px;
-        width: 1200px;
-        position: relative;
-        float: left;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-      }
+@keyframes slide_animation {
+    0% { left: 0; }
+    10% { left: 0; }
+    20% { left: 1200px; }
+    30% { left: 1200px; }
+    40% { left: 2400px; }
+    50% { left: 2400px; }
+    60% { left: 1200px; }
+    70% { left: 1200px; }
+    80% { left: 0px; }
+    90% { left: 0px; }
+    100% { left: 0px; }
+    }
+    
+.slide-images {
+    width: 3600px;
+    height: 800px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    animation-name: slide_animation;
+    animation-duration: 33s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+    }
+    
+.img-container {
+    height: 800px;
+    width: 1200px;
+    position: relative;
+    float: left;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
     }
      
 @media (min-width: 1024px){
-    .slider-frame {
-        overflow: hidden;
-        height: 800px;
-        width: 1200px;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 20%;
-      }
+
+.slider-frame {
+    overflow: hidden;
+    height: 800px;
+    width: 1200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20%;
     }
+
+.viewcv {
+        top: 50%;
+        right: 47%;
+    }
+
+.github {
+    top: 65%;
+    bottom: 20%;
+    right: 45%;
+    }
+}
      
 @media (min-width: 1200px){
     .blog-1 {
-        background: url(./images/blue.jpg) no-repeat center center;
-        background-size: 100%;
+    background: url(./images/blue.jpg) no-repeat center center;
+    background-size: 100%;
     }
     
-    .blog-2 {
-        background: url(./images/neon_head.jpg) no-repeat center center;
-        background-size: 100%;
+.blog-2 {
+    background: url(./images/neon_head.jpg) no-repeat center center;
+    background-size: 100%;
     }
     
-    .blog-3 {
-        background: url(./images/china_town.jpg) no-repeat center center;
-        background-size: 100%;
+.blog-3 {
+    background: url(./images/china_town.jpg) no-repeat center center;
+    background-size: 100%;
     }
     
-    .blog-4 {
-        background: url(./images/ktv.jpg) no-repeat center center;
-        background-size: 100%;
+.blog-4 {
+    background: url(./images/ktv.jpg) no-repeat center center;
+    background-size: 100%;
     }
     
-    .blog-5 {
-        background: url(./images/rain.jpg) no-repeat center center;
-        background-size: 100%;
+.blog-5 {
+    background: url(./images/rain.jpg) no-repeat center center;
+    background-size: 100%;
     }
 
-    .viewcv {
-        position: fixed;
-        top: 60%;
-        right: 40%;
-      }
+.viewcv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    top: 55%;
+    right: 47%;
+    }
+
+.github {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    top: 55%;
+    right: 25%;
+    }
 }
-
-
-
-/* Animation full text: */
-    /* animation-name: colorful-text;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-fill-mode: none; */
