@@ -305,19 +305,16 @@ body {
     }
 
 #about p {
-    margin-top: 22%;
+    margin-top: 40%;
     margin-left: 5%;
-    margin-right: 10%;
-    font-size: 55px;
+    margin-right: 5%;
+    font-size: 20px;
     color: white;
     opacity: 0.7;
 }
 
 .about {
-    position: fixed;
-    top: 20%;
-    right: 10%;
-    width: 10%;
+    visibility: hidden;
 }
 
 /* ########################### End About Page ########################### */
@@ -354,13 +351,6 @@ body {
     opacity: 0.7;
 }
 
-.resume {
-    position: fixed;
-    top: 20%;
-    right: 10%;
-    width: 10%;
-}
-
 @keyframes neon-flicker-view-resume {
 
     35% { color:#333; }
@@ -383,11 +373,15 @@ body {
         text-shadow: inherit; }
     }
 
+.resume {
+        visibility: hidden;
+    }
+
 .viewcv {
     position: fixed;
     top: 50%;
-    right: 40%;
-    /* width: 10%; */
+    bottom: 40%;
+    right: 50%;
 }
 
 /* ########################### End Resume Page ########################### */
@@ -398,11 +392,21 @@ body {
 
 .slider-frame {
     overflow: hidden;
+    height: 400px;
+    width: 600px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 35%;
+}
+
+/* .slider-frame {
+    overflow: hidden;
     height: 800px;
     width: 1200px;
     margin-left: 20px;
-    margin-top: 25%;
-}
+    margin-right: 20px;
+    margin-top: 35%;
+} */
 
 @keyframes slide_animation {
     0% { left: 0; }
@@ -430,7 +434,29 @@ body {
     animation-play-state: running;
 }
 
+/* .slide-images {
+    width: 3600px;
+    height: 800px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    animation-name: slide_animation;
+    animation-duration: 33s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+} */
+
 .img-container {
+    height: 400px;
+    width: 600px;
+    position: relative;
+    float: left;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* .img-container {
     height: 800px;
     width: 1200px;
     position: relative;
@@ -438,7 +464,7 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-}
+} */
 
 .img-container:nth-of-type(1) {
     background-image: url('images/Amsterdam.jpg');
@@ -509,10 +535,7 @@ body {
 }
 
 .interests {
-    position: fixed;
-    top: 20%;
-    right: 10%;
-    width: 10%;
+    visibility: hidden;
 }
 
 /* ########################### End Interests Page ########################### */
@@ -603,38 +626,33 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 22%;
+    margin-top: 35%;
     margin-left: 5%;
     margin-right: 10%;
     margin-bottom: 5%;
-    font-size: 20px;
+    font-size: 18px;
     color: white;
     opacity: 0.7
 }
 
 .blog-1 {
     background: url(./images/blue.jpg) no-repeat center center;
-    background-size: 100%;
 }
 
 .blog-2 {
     background: url(./images/neon_head.jpg) no-repeat center center;
-    background-size: 100%;
 }
 
 .blog-3 {
     background: url(./images/china_town.jpg) no-repeat center center;
-    background-size: 100%;
 }
 
 .blog-4 {
     background: url(./images/ktv.jpg) no-repeat center center;
-    background-size: 100%;
 }
 
 .blog-5 {
     background: url(./images/rain.jpg) no-repeat center center;
-    background-size: 100%;
 }
 
 .blog-styling {
@@ -669,26 +687,61 @@ body {
 }
 
 .blog {
-    position: fixed;
-    top: 20%;
-    right: 10%;
-    width: 10%;
+    visibility: hidden;
 }
 
 /* ########################### End Blog Page ########################### */
 
 /* -------------------- Breakpoints based on content ---------------------- */
 
-@media (min-width: 320px){
-     
-    }
-
-@media (min-width: 480px){
-     
-    }
-
 @media (min-width: 640px){
 
+.viewcv {
+        position: fixed;
+        top: 60%;
+        right: 47%;
+    }
+
+.about {
+        visibility: visible;
+        position: fixed;
+        top: 8%;
+        right: 15%;
+        width: 6%;
+    }
+
+#about p {
+        margin-top: 40%;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 30px;
+        color: white;
+        opacity: 0.7;
+    }
+
+.resume {
+        visibility: visible;
+        position: fixed;
+        top: 8%;
+        right: 15%;
+        width: 6%;
+    }
+
+.interests {
+        visibility: visible;
+        position: fixed;
+        top: 8%;
+        right: 15%;
+        width: 8%;
+    }
+
+.blog {
+        visibility: visible;
+        position: fixed;
+        top: 8%;
+        right: 15%;
+        width: 6%;
+      }
     }
      
 @media (min-width: 768px){
@@ -696,8 +749,114 @@ body {
         flex-direction: row;
       }
     
-      .nav a {
+    .nav a {
         font-size: 40px;
+      }
+
+    .about {
+        visibility: visible;
+        position: fixed;
+        top: 20%;
+        right: 2%;
+        width: 6.5%;
+    }
+
+    #about p {
+        margin-top: 22%;
+        margin-left: 5%;
+        margin-right: 10%;
+        font-size: 55px;
+        color: white;
+        opacity: 0.7;
+    }
+
+    .viewcv {
+        position: fixed;
+        top: 55%;
+        right: 40%;
+      }
+
+    .resume {
+        visibility: visible;
+        position: fixed;
+        top: 20%;
+        right: 2%;
+        width: 7.5%;
+      }
+
+    .interests {
+        visibility: visible;
+        position: fixed;
+        top: 20%;
+        right: 2%;
+        width: 8%;
+      }
+
+    .blog {
+        visibility: visible;
+        position: fixed;
+        top: 20%;
+        right: 2%;
+        width: 6%;
+      }
+
+    .blog-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15%;
+        margin-left: 5%;
+        margin-right: 10%;
+        margin-bottom: 5%;
+        font-size: 20px;
+        color: white;
+        opacity: 0.7
+      }
+    
+    .slider-frame {
+        overflow: hidden;
+        height: 800px;
+        width: 1200px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20%;
+    }
+    
+    @keyframes slide_animation {
+        0% { left: 0; }
+        10% { left: 0; }
+        20% { left: 1200px; }
+        30% { left: 1200px; }
+        40% { left: 2400px; }
+        50% { left: 2400px; }
+        60% { left: 1200px; }
+        70% { left: 1200px; }
+        80% { left: 0px; }
+        90% { left: 0px; }
+        100% { left: 0px; }
+    }
+    
+    .slide-images {
+        width: 3600px;
+        height: 800px;
+        margin: 0 0 0 -2400px;
+        position: relative;
+        animation-name: slide_animation;
+        animation-duration: 33s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-play-state: running;
+    }
+    
+    .img-container {
+        height: 800px;
+        width: 1200px;
+        position: relative;
+        float: left;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
       }
     }
      
@@ -706,8 +865,37 @@ body {
     }
      
 @media (min-width: 1200px){
-    
+    .blog-1 {
+        background: url(./images/blue.jpg) no-repeat center center;
+        background-size: 100%;
     }
+    
+    .blog-2 {
+        background: url(./images/neon_head.jpg) no-repeat center center;
+        background-size: 100%;
+    }
+    
+    .blog-3 {
+        background: url(./images/china_town.jpg) no-repeat center center;
+        background-size: 100%;
+    }
+    
+    .blog-4 {
+        background: url(./images/ktv.jpg) no-repeat center center;
+        background-size: 100%;
+    }
+    
+    .blog-5 {
+        background: url(./images/rain.jpg) no-repeat center center;
+        background-size: 100%;
+    }
+
+    .viewcv {
+        position: fixed;
+        top: 60%;
+        right: 40%;
+      }
+}
 
 
 
